@@ -1,0 +1,5 @@
+read_verilog -sv ./dom_mult.sv;
+synth -noabc -top dom_mult
+
+write_verilog -noattr circuit.v
+write_json circuit.json

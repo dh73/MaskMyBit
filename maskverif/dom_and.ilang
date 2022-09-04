@@ -1,0 +1,73 @@
+
+autoidx 88
+attribute \top 1
+attribute \src "dom_and.sv:2.1-15.10"
+module \dom_and
+  ## input [ \Ax \Ay ]
+  ## input [ \Bx \By ]
+  ## output [ \Aq ]
+  attribute \src "dom_and.sv:4.22-4.24"
+  wire output 5 \Aq
+  attribute \src "dom_and.sv:2.27-2.29"
+  wire input 1 \Ax
+  attribute \src "dom_and.sv:2.31-2.33"
+  wire input 2 \Ay
+  attribute \src "dom_and.sv:3.20-3.22"
+  wire input 3 \Bx
+  attribute \src "dom_and.sv:3.24-3.26"
+  wire input 4 \By
+  attribute \src "dom_and.sv:11.9-11.22"
+  wire \add_AxAy_AxBy
+  attribute \src "dom_and.sv:12.9-12.22"
+  wire \add_BxAy_BxBy
+  attribute \src "dom_and.sv:6.9-6.17"
+  wire \mul_AxAy
+  attribute \src "dom_and.sv:7.9-7.17"
+  wire \mul_AxBy
+  attribute \src "dom_and.sv:8.9-8.17"
+  wire \mul_BxAy
+  attribute \src "dom_and.sv:9.9-9.17"
+  wire \mul_BxBy
+  attribute \src "dom_and.sv:6.20-6.27"
+  cell $_AND_ $auto$simplemap.cc:86:simplemap_bitop$81
+    connect \A \Ax
+    connect \B \Ay
+    connect \Y \mul_AxAy
+  end
+  attribute \src "dom_and.sv:7.20-7.27"
+  cell $_AND_ $auto$simplemap.cc:86:simplemap_bitop$82
+    connect \A \Ax
+    connect \B \By
+    connect \Y \mul_AxBy
+  end
+  attribute \src "dom_and.sv:8.20-8.27"
+  cell $_AND_ $auto$simplemap.cc:86:simplemap_bitop$83
+    connect \A \Bx
+    connect \B \Ay
+    connect \Y \mul_BxAy
+  end
+  attribute \src "dom_and.sv:9.20-9.27"
+  cell $_AND_ $auto$simplemap.cc:86:simplemap_bitop$84
+    connect \A \Bx
+    connect \B \By
+    connect \Y \mul_BxBy
+  end
+  attribute \src "dom_and.sv:11.25-11.44"
+  cell $_XOR_ $auto$simplemap.cc:86:simplemap_bitop$85
+    connect \A \mul_AxAy
+    connect \B \mul_AxBy
+    connect \Y \add_AxAy_AxBy
+  end
+  attribute \src "dom_and.sv:12.25-12.44"
+  cell $_XOR_ $auto$simplemap.cc:86:simplemap_bitop$86
+    connect \A \mul_BxAy
+    connect \B \mul_BxBy
+    connect \Y \add_BxAy_BxBy
+  end
+  attribute \src "dom_and.sv:14.16-14.45"
+  cell $_XOR_ $auto$simplemap.cc:86:simplemap_bitop$87
+    connect \A \add_AxAy_AxBy
+    connect \B \add_BxAy_BxBy
+    connect \Y \Aq
+  end
+end

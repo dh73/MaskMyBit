@@ -1,0 +1,237 @@
+$date
+	Sun Sep  4 21:13:03 2022
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb_and_no_refresh $end
+$var wire 1 ! x1 $end
+$var wire 1 " x0 $end
+$var reg 1 # a0 $end
+$var reg 1 $ a1 $end
+$var reg 1 % b0 $end
+$var reg 1 & b1 $end
+$var reg 1 ' clk $end
+$var reg 4 ( idx [3:0] $end
+$var reg 1 ) r $end
+$var reg 1 * rstn $end
+$scope module uut $end
+$var wire 1 # a0 $end
+$var wire 1 $ a1 $end
+$var wire 1 % b0 $end
+$var wire 1 & b1 $end
+$var wire 1 ' clk $end
+$var wire 1 + cross_a0_b1 $end
+$var wire 1 , cross_b0_a1 $end
+$var wire 1 - inner_a0_b0 $end
+$var wire 1 . inner_a1_b1 $end
+$var wire 1 / integ_x0 $end
+$var wire 1 0 integ_x1 $end
+$var wire 1 ) r $end
+$var wire 1 1 refresh_a0_b0_r $end
+$var wire 1 2 refresh_a1_b1_r $end
+$var wire 1 * rstn $end
+$var wire 1 " x0 $end
+$var wire 1 ! x1 $end
+$var reg 1 3 reshare_x0 $end
+$var reg 1 4 reshare_x1 $end
+$var reg 1 5 reshare_x2 $end
+$var reg 1 6 reshare_x3 $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+06
+05
+04
+03
+02
+01
+00
+0/
+0.
+0-
+0,
+0+
+0*
+0)
+bx (
+0'
+0&
+0%
+0$
+0#
+0"
+0!
+$end
+#5000
+1'
+#10000
+0'
+#15000
+1'
+b0 (
+1*
+#20000
+0'
+1&
+b1 (
+#25000
+1'
+1%
+0&
+b10 (
+#30000
+0'
+1&
+b11 (
+#35000
+1'
+1$
+0%
+0&
+b100 (
+#40000
+12
+1.
+0'
+1&
+b101 (
+#45000
+16
+15
+02
+1,
+0.
+1'
+1%
+0&
+b110 (
+#50000
+12
+1.
+0'
+1&
+b111 (
+#55000
+10
+1!
+05
+02
+0,
+0.
+1'
+1#
+0$
+0%
+0&
+b1000 (
+#60000
+1+
+0'
+1&
+b1001 (
+#65000
+00
+0!
+06
+11
+1-
+0+
+1'
+1%
+0&
+b1010 (
+#70000
+1+
+0'
+1&
+b1011 (
+#75000
+1/
+1"
+13
+01
+0-
+0+
+1'
+1$
+0%
+0&
+b1100 (
+#80000
+12
+1+
+1.
+0'
+1&
+b1101 (
+#85000
+0/
+0"
+16
+15
+03
+11
+02
+1-
+1,
+0+
+0.
+1'
+1%
+0&
+b1110 (
+#90000
+0'
+b1111 (
+#95000
+1/
+1"
+10
+1!
+13
+06
+1'
+#100000
+0'
+#105000
+1'
+#110000
+0'
+#115000
+1'
+#120000
+0'
+#125000
+1'
+#130000
+0'
+#135000
+1'
+#140000
+0'
+#145000
+1'
+#150000
+0'
+#155000
+1'
+#160000
+0'
+#165000
+1'
+#170000
+0'
+#175000
+1'
+#180000
+0'
+#185000
+1'
+#190000
+0'

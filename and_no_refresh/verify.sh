@@ -1,0 +1,13 @@
+python3  $ALMA_ROOT/verify.py \
+    --json circuit.json \
+    --label labels.txt \
+    --vcd trace.vcd \
+    --cycles -1 \
+    --mode transient \
+    --checking-mode per-secret \
+    --rst-name rstn \
+    -p 0 \
+    -s 2 \
+    --probing-model time-constrained \
+    --top-module and_no_refresh \
+    -q 1

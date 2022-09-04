@@ -1,0 +1,7 @@
+clk = unimportant
+rstn = unimportant
+a0 = secret 0:0
+a1 = secret 0:0
+b0 = secret 1:1
+b1 = secret 1:1
+r  = static_random

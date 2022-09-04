@@ -1,0 +1,382 @@
+{
+  "creator": "Yosys 0.13 (git sha1 8b1eafc3a, clang 10.0.0-4ubuntu1 -fPIC -Os)",
+  "modules": {
+    "dom_mult": {
+      "attributes": {
+        "top": "00000000000000000000000000000001",
+        "src": "./dom_mult.sv:2.1-37.10"
+      },
+      "ports": {
+        "clk": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "rstn": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "Ax": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "Ay": {
+          "direction": "input",
+          "bits": [ 5 ]
+        },
+        "Bx": {
+          "direction": "input",
+          "bits": [ 6 ]
+        },
+        "By": {
+          "direction": "input",
+          "bits": [ 7 ]
+        },
+        "Z0": {
+          "direction": "input",
+          "bits": [ 8 ]
+        },
+        "Aq": {
+          "direction": "output",
+          "bits": [ 9 ]
+        },
+        "Bq": {
+          "direction": "output",
+          "bits": [ 10 ]
+        }
+      },
+      "cells": {
+        "$auto$ff.cc:262:slice$94": {
+          "hide_name": 1,
+          "type": "$_DFF_PN0_",
+          "parameters": {
+          },
+          "attributes": {
+            "always_ff": "00000000000000000000000000000001",
+            "src": "./dom_mult.sv:20.4-28.7"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 11 ],
+            "Q": [ 12 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$ff.cc:262:slice$95": {
+          "hide_name": 1,
+          "type": "$_DFF_PN0_",
+          "parameters": {
+          },
+          "attributes": {
+            "always_ff": "00000000000000000000000000000001",
+            "src": "./dom_mult.sv:20.4-28.7"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 13 ],
+            "Q": [ 14 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$simplemap.cc:86:simplemap_bitop$86": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "./dom_mult.sv:9.22-9.29"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 4 ],
+            "B": [ 5 ],
+            "Y": [ 15 ]
+          }
+        },
+        "$auto$simplemap.cc:86:simplemap_bitop$87": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "./dom_mult.sv:10.22-10.29"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 6 ],
+            "B": [ 7 ],
+            "Y": [ 16 ]
+          }
+        },
+        "$auto$simplemap.cc:86:simplemap_bitop$88": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "./dom_mult.sv:11.22-11.29"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 4 ],
+            "B": [ 7 ],
+            "Y": [ 17 ]
+          }
+        },
+        "$auto$simplemap.cc:86:simplemap_bitop$89": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "./dom_mult.sv:12.22-12.29"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 6 ],
+            "B": [ 5 ],
+            "Y": [ 18 ]
+          }
+        },
+        "$auto$simplemap.cc:86:simplemap_bitop$90": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "./dom_mult.sv:15.30-15.45"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 17 ],
+            "B": [ 8 ],
+            "Y": [ 11 ]
+          }
+        },
+        "$auto$simplemap.cc:86:simplemap_bitop$91": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "./dom_mult.sv:16.30-16.45"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 18 ],
+            "B": [ 8 ],
+            "Y": [ 13 ]
+          }
+        },
+        "$auto$simplemap.cc:86:simplemap_bitop$92": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "./dom_mult.sv:31.20-31.48"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 12 ],
+            "B": [ 15 ],
+            "Y": [ 9 ]
+          }
+        },
+        "$auto$simplemap.cc:86:simplemap_bitop$93": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "./dom_mult.sv:32.20-32.48"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 14 ],
+            "B": [ 16 ],
+            "Y": [ 10 ]
+          }
+        }
+      },
+      "netnames": {
+        "Aq": {
+          "hide_name": 0,
+          "bits": [ 9 ],
+          "attributes": {
+            "src": "./dom_mult.sv:6.16-6.18"
+          }
+        },
+        "Ax": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "./dom_mult.sv:3.14-3.16"
+          }
+        },
+        "Ay": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "src": "./dom_mult.sv:3.18-3.20"
+          }
+        },
+        "Bq": {
+          "hide_name": 0,
+          "bits": [ 10 ],
+          "attributes": {
+            "src": "./dom_mult.sv:6.20-6.22"
+          }
+        },
+        "Bx": {
+          "hide_name": 0,
+          "bits": [ 6 ],
+          "attributes": {
+            "src": "./dom_mult.sv:4.14-4.16"
+          }
+        },
+        "By": {
+          "hide_name": 0,
+          "bits": [ 7 ],
+          "attributes": {
+            "src": "./dom_mult.sv:4.18-4.20"
+          }
+        },
+        "Z0": {
+          "hide_name": 0,
+          "bits": [ 8 ],
+          "attributes": {
+            "src": "./dom_mult.sv:5.14-5.16"
+          }
+        },
+        "clk": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "./dom_mult.sv:2.28-2.31"
+          }
+        },
+        "cross_AxBy": {
+          "hide_name": 0,
+          "bits": [ 17 ],
+          "attributes": {
+            "src": "./dom_mult.sv:11.9-11.19"
+          }
+        },
+        "cross_BxAy": {
+          "hide_name": 0,
+          "bits": [ 18 ],
+          "attributes": {
+            "src": "./dom_mult.sv:12.9-12.19"
+          }
+        },
+        "inner_AxAy": {
+          "hide_name": 0,
+          "bits": [ 15 ],
+          "attributes": {
+            "src": "./dom_mult.sv:9.9-9.19"
+          }
+        },
+        "inner_BxBy": {
+          "hide_name": 0,
+          "bits": [ 16 ],
+          "attributes": {
+            "src": "./dom_mult.sv:10.9-10.19"
+          }
+        },
+        "integ_Aq": {
+          "hide_name": 0,
+          "bits": [ 9 ],
+          "attributes": {
+            "src": "./dom_mult.sv:31.9-31.17"
+          }
+        },
+        "integ_Bq": {
+          "hide_name": 0,
+          "bits": [ 10 ],
+          "attributes": {
+            "src": "./dom_mult.sv:32.9-32.17"
+          }
+        },
+        "reshare_AxBy_ff": {
+          "hide_name": 0,
+          "bits": [ 12 ],
+          "attributes": {
+            "src": "./dom_mult.sv:17.10-17.25"
+          }
+        },
+        "reshare_BxAy_ff": {
+          "hide_name": 0,
+          "bits": [ 14 ],
+          "attributes": {
+            "src": "./dom_mult.sv:18.10-18.25"
+          }
+        },
+        "reshare_cross_AxBy": {
+          "hide_name": 0,
+          "bits": [ 11 ],
+          "attributes": {
+            "src": "./dom_mult.sv:15.9-15.27"
+          }
+        },
+        "reshare_cross_BxAy": {
+          "hide_name": 0,
+          "bits": [ 13 ],
+          "attributes": {
+            "src": "./dom_mult.sv:16.9-16.27"
+          }
+        },
+        "rstn": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "./dom_mult.sv:2.33-2.37"
+          }
+        }
+      }
+    }
+  }
+}

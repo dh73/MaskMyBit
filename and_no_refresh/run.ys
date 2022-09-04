@@ -1,0 +1,5 @@
+read_verilog -sv ./and_no_refresh.sv;
+synth -noabc -top and_no_refresh
+
+write_verilog -noattr circuit.v
+write_json circuit.json

@@ -1,0 +1,16 @@
+read_verilog -sv ./dom_and.sv;
+
+hierarchy -check -top dom_and;
+proc;
+flatten;
+opt;
+memory;
+opt;
+techmap;
+opt;
+
+rmports
+opt_clean -purge
+clean
+
+write_ilang dom_and.ilang

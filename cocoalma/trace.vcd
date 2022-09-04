@@ -1,0 +1,103 @@
+$date
+	Thu Sep  1 22:13:54 2022
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb_circuit $end
+$var wire 1 ! Bq $end
+$var wire 1 " Aq $end
+$var reg 1 # Ax $end
+$var reg 1 $ Ay $end
+$var reg 1 % Bx $end
+$var reg 1 & By $end
+$var reg 1 ' Z0 $end
+$var reg 1 ( clk $end
+$var reg 1 ) rstn $end
+$scope module uut $end
+$var wire 1 " Aq $end
+$var wire 1 # Ax $end
+$var wire 1 $ Ay $end
+$var wire 1 ! Bq $end
+$var wire 1 % Bx $end
+$var wire 1 & By $end
+$var wire 1 ' Z0 $end
+$var wire 1 * _0_ $end
+$var wire 1 + add_AxAy_AxBy $end
+$var wire 1 , add_BxAy_BxBy $end
+$var wire 1 - add_BxZ0 $end
+$var wire 1 ( clk $end
+$var wire 1 . mul_AxAy $end
+$var wire 1 / mul_AxBy $end
+$var wire 1 0 mul_BxAy $end
+$var wire 1 1 mul_BxBy $end
+$var wire 1 ) rstn $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+01
+00
+0/
+0.
+0-
+0,
+0+
+0*
+0)
+0(
+0'
+0&
+0%
+0$
+0#
+0"
+0!
+$end
+#5000
+1(
+#10000
+0(
+#15000
+1(
+#20000
+0(
+#25000
+1(
+1)
+#30000
+0(
+#35000
+1(
+#40000
+0(
+#45000
+1(
+#50000
+0(
+1$
+1&
+#55000
+1(
+#60000
+0(
+#65000
+1(
+#70000
+0(
+#75000
+1(
+#80000
+0(
+#85000
+1(
+#90000
+0(
+#95000
+1(
+#100000
+0(
